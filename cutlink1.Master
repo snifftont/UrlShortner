@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="cutlink1.master.cs" Inherits="cutlink.cutlink11" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>cutlink</title>
+    <link href="css/cutlink.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div>
+        <div class="menu">
+             <div class="menu_inner">
+                 <div class="logo">
+                   <a href="Dashboard.aspx" class="sp1" style="text-decoration:none;">
+                     <asp:Image ID="Image1" runat="server" ImageUrl="~/image/logo.png" BorderWidth="0px"  /></a>
+        </div>
+                 <div class="menu_main">
+                      <span class="sp1">
+                          <%--<asp:LinkButton ID="LinkButton1" runat="server" CssClass="browse" Height="30px" Width="160px" PostBackUrl="~/recipes.aspx">Browse Recipes</asp:LinkButton>--%>&nbsp;&nbsp;&nbsp; &nbsp;   <a href="signIn.aspx" class="a2">Sign in</a>
+                    
+                </span>
+        </div>
+        </div>
+        </div>
+        <div class="place">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+          <div class="footer">
+            <div class="footer1">
+                <div class="footer2">
+                <span class="sp1">
+                     <a href="aboutUs.aspx" class="a1">About</a> &nbsp &nbsp &nbsp <a href="blog.aspx" class="a1">Blog</a> &nbsp &nbsp &nbsp
+                    <a href="contactUs.aspx" class="a1">Contact</a> &nbsp &nbsp &nbsp <a href="job.aspx" class="a1">Jobs</a> &nbsp &nbsp &nbsp
+                     <a href="terms.aspx" class="a1">Terms</a> &nbsp &nbsp &nbsp <a href="privacy.aspx" class="a1">Privacy</a>  
+                </span>
+                    </div>
+                 <div class="footer2">
+                <span class="sp1">Powered by <a href="http://www.nucleon-tech.com/" class="sp1" style="text-decoration:none;"> Nucleon Infotech</a></span>
+
+                 </div>
+        </div>
+        </div>
+
+    
+    </div>
+    </form>
+</body>
+</html>
